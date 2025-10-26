@@ -1,12 +1,22 @@
-# 🧠 MERN Blog Client
+# 🧠 MERN Blog Server
 
 ## Setup
-1. Install dependencies:
+1. Copy `.env.example` → `.env` and fill in MongoDB Atlas URI.
+2. Install dependencies:
    ```bash
    npm install
    ```
-2. Start development server:
+3. Run in development:
+   ```bash
+   npm run dev
+   ```
+4. Or production:
    ```bash
    npm start
    ```
-3. The proxy is already configured to `http://localhost:5000` for backend API calls.
+
+## API Endpoints
+- GET    /api/posts
+- POST   /api/posts
+- PUT    /api/posts/:id
+- DELETE /api/posts/:id
